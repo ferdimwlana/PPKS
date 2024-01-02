@@ -1,0 +1,22 @@
+<x-app>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Detail Satgas PPKS</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <dl>
+                        <dt>
+                            <dd>{{ $struktur->nama }}</dd>
+                            <dd>{{ $struktur->jabatan }}</dd>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ url('public') }}/{{ $struktur->foto }}" alt="" style="width: 400px;height:400px" class="image-rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+</x-app>
